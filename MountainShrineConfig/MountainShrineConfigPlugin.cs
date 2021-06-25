@@ -128,6 +128,7 @@ namespace MountainShrineConfig
         }
 
         private bool ShouldRemoveBossCardFromDeck() => bossShrineCardSelectedCount == maxBossShrineCount.Value;
+
         private bool ShouldSpawnBossShrine() => bossShrineCardSelectedCount < minBossShrineCount.Value;
 
         private bool CanAffordBossShrine(int maxCost) => bossDeck.GetChoice(0).value.cost < maxCost;
